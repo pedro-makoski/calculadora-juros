@@ -78,6 +78,10 @@ h1 {
     outline: 1px solid var(--cor-desfecho);
 }
 
+button {
+    cursor: pointer;
+}
+
 .inputs .botoes {
     display: flex;
     flex-direction: row;
