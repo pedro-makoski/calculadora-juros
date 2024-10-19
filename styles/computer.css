@@ -1,0 +1,11 @@
+#calculadora {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--cor-padrao);
+    border-radius: var(--border-radius-padrao);
+    border: 2px solid var(--cor-desfecho);
+}
+
+.inputs input {
+    height: 40px;
+}

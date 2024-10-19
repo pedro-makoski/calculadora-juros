@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="description" content="Site de cálculo de Juros Simples e Compostos">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/computer.css" media="screen and (min-width: 700px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <title>Calculadora Juros</title>
+</head>
+<body>
+    <main>
+        <section id="calculadora">
+            <h1>Calculadora de Juros</h1>
+            <div class="inputs">
+                <div>
+                    <label for="capital">Capital aplicado</label>
+                    <input type="text" id="capital" name="capital" autocomplete="off">
+                </div>
+                <div>
+                    <label for="taxa">Taxa por unidade de periodo</label>
+                    <input type="text" id="taxa" name="taxa" autocomplete="off">
+                </div>
+                <div>
+                    <label for="periodo">Periodo determinado</label>
+                    <input type="text" id="periodo" name="periodo" autocomplete="off">
+                </div>
+                <div class="botoes">
+                    <button id="juros-simples">Ver Juros Simples</button>
+                    <button id="juros-compostos">Ver Juros Compostos</button>
+                </div>
+            </div>
+        </section>
+        <dialog id="resultados">
+            <button id="exit-button"><span class="material-symbols-outlined">close</span></button>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Valor</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Valor de Juros</th>
+                        <td class="juros"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Valor Montante</th>
+                        <td class="montante"></td>
+                    </tr>
+                </thead>
+            </table>
+        </dialog>
+    </main>
+    <script src="scripts/module.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
