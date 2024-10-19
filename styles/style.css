@@ -109,13 +109,16 @@ button {
 dialog {
     position: relative;
     border: none;
-    padding: 20px;
     border-radius: var(--border-radius-padrao);
     background-color: var(--cor-blur);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     overflow: visible;
+}
+
+.dialog {
+    padding: 20px;
 }
 
 dialog::backdrop {

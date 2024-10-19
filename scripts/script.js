@@ -38,7 +38,7 @@ botao_fechar_modal.addEventListener('click', () => {
 })
 
 document.addEventListener('click', (e) => {
-    if(e.target !== modal_inside && e.target !== botao_juros_simples && e.target !== botao_juros_compostos) {
+    if(e.target !== modal_inside && e.target !== botao_juros_simples && e.target !== botao_juros_compostos && !modal_inside.contains(e.target)) {
         modal.close();
     }
 })
