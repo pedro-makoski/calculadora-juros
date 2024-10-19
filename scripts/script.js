@@ -1,4 +1,5 @@
 const modal = document.getElementById('resultados');
+const modal_inside = document.querySelector('.dialog')
 const botao_juros_simples = document.getElementById('juros-simples');
 const botao_juros_compostos = document.getElementById('juros-compostos');
 const botao_fechar_modal = document.getElementById('exit-button');
@@ -34,4 +35,10 @@ botao_juros_compostos.addEventListener('click', () => {
 
 botao_fechar_modal.addEventListener('click', () => {
     modal.close();
+})
+
+document.addEventListener('click', (e) => {
+    if(e.target !== modal_inside && e.target !== botao_juros_simples && e.target !== botao_juros_compostos) {
+        modal.close();
+    }
 })
