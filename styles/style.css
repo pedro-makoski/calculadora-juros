@@ -31,6 +31,10 @@ main {
 
 }
 
+h1 {
+    text-align: center;
+}
+
 #calculadora {
     background-color: var(--cor-blur);
     width: 100%;
