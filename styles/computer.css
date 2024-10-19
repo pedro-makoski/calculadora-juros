@@ -8,4 +8,5 @@
 
 .inputs input {
     height: 40px;
+    box-shadow: 1px 1px 5px var(--cor-desfecho-semi-transparent);
 }

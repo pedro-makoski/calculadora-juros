@@ -36,7 +36,6 @@ main {
     width: 100%;
     height: max-content;
     padding: 20px;
-    box-shadow: 1px 1px 5px var(--cor-desfecho-semi-transparent);
     display: flex;
     justify-content: center;
     flex-direction: column;
