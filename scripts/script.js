@@ -17,11 +17,11 @@ function show_it(type_juros) { // 0 - Simples 1 - Composta
     botao_fechar_modal.blur();
 
     if(type_juros == 0) {
-        juros_result.innerHTML = res.juros_simples()[0];
-        montante_result.innerHTML = res.juros_simples()[1];
+        juros_result.innerHTML = `R$ ${res.juros_simples()[0]}`;
+        montante_result.innerHTML = `R$ ${res.juros_simples()[1]}`;
     } else {
-        juros_result.innerHTML = res.juros_compostos()[0];
-        montante_result.innerHTML = res.juros_compostos()[1];
+        juros_result.innerHTML = `R$ ${res.juros_compostos()[0]}`;
+        montante_result.innerHTML = `R$ ${res.juros_compostos()[1]}`;
     }
 }
 
