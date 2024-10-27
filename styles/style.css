@@ -120,7 +120,7 @@ dialog {
 .dialog {
     padding: 20px;
     width: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 dialog::backdrop {
