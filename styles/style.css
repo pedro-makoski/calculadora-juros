@@ -115,9 +115,6 @@ dialog {
     top: 50%;
     transform: translate(-50%, -50%);
     overflow: visible;
-}
-
-.dialog {
     padding: 20px;
 }
 
